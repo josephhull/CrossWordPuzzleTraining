@@ -98,14 +98,14 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // howToLoadYourOwnPuzzleToolStripMenuItem
             // 
             this.howToLoadYourOwnPuzzleToolStripMenuItem.Name = "howToLoadYourOwnPuzzleToolStripMenuItem";
-            this.howToLoadYourOwnPuzzleToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
+            this.howToLoadYourOwnPuzzleToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
             this.howToLoadYourOwnPuzzleToolStripMenuItem.Text = "How to Load Your Own Puzzle!";
             this.howToLoadYourOwnPuzzleToolStripMenuItem.Click += new System.EventHandler(this.howToLoadYourOwnPuzzleToolStripMenuItem_Click);
             // 
@@ -138,8 +138,9 @@
             this.board.Name = "board";
             this.board.RowHeadersVisible = false;
             this.board.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.board.Size = new System.Drawing.Size(619, 137);
+            this.board.Size = new System.Drawing.Size(619, 462);
             this.board.TabIndex = 1;
+            this.board.Visible = false;
             this.board.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.board_CellPainting);
             this.board.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.board_CellValueChanged);
             // 
@@ -213,9 +214,9 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 231);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 27);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(595, 246);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(595, 462);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // Form1

@@ -60,14 +60,37 @@ namespace CrossWordPuzzleYoutube
 
 
             List<UserControl1> mylist = new List<UserControl1>();
-            //
-            for (int x = 0; x < 100; x++)
+            //this instances UserControl1 as mylist from here on out
+            for (int x = 0; x < 10; x++)
+            //x is unimportant as a variable
+            //it never gets used again during the loop
             {
-                UserControl1 tb = new UserControl1();
-                tb.Parent = flowLayoutPanel1;
-                mylist.Add(tb); 
-            }
+                UserControl1 tb1 = new UserControl1();
+                //this instances tb as the new UserControl1 reference
+                tb1.Parent = flowLayoutPanel1;
+                //this says that the UserControl window(s)
+                //  will appear on the flowLayoutPanel1
+                //we put this in the loop because it will make
+                //  each added usercontrol to this parent
+                mylist.Add(tb1); 
+                //this is pretty much just adding a usercontrol
+                //  to the flowLayoutPanel parent
+                UserControl2 tb2 = new UserControl2();
+                //this instances tb as the new UserControl1 reference
+                tb2.Parent = flowLayoutPanel1;
+                //this says that the UserControl window(s)
+                //  will appear on the flowLayoutPanel1
+                //we put this in the loop because it will make
+                //  each added usercontrol to this parent
+                mylist.Add(tb1);
+                //this is pretty much just adding a usercontrol
+                //  to the flowLayoutPanel parent
+            }   //once the loop has ended, we are left with the amount
             
+            //TODO: Make rows and columns
+            //      Make rows and columns only have 10
+            //      Make numbers on specific ones
+            //      Get familiar with user controls
            
             
             
@@ -88,13 +111,13 @@ namespace CrossWordPuzzleYoutube
             //the loop will stop
 
             foreach (DataGridViewColumn c in board.Columns)
-                c.Width = board.Width / board.Columns.Count / 2;
+                c.Width = board.Width / board.Columns.Count;
             //set width columns
             //by dividing width by number of columns
             //this allows specific and angular proportions
 
             foreach (DataGridViewRow r in board.Rows)
-                r.Height = board.Height / board.Rows.Count / 2;
+                r.Height = board.Height / board.Rows.Count;
             //set width rows
             //by dividing width by number of rows
             //this allows specific and angular proportions
