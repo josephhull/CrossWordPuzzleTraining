@@ -18,17 +18,16 @@ namespace CrossWordPuzzleYoutube
         public string puzzle_file = Application.StartupPath + "\\Puzzles\\Puzzle.pzl";
 
         public Form1()
+            // this is a constructor
+            //only fires when instanced
         {
             buildWordList();
             InitializeComponent();
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
+        
         private void buildWordList()
+            //this is just a method
         {
             string line = "";
             using(StreamReader s = new StreamReader(puzzle_file))
@@ -38,8 +37,11 @@ namespace CrossWordPuzzleYoutube
                 {
                     string [] l = line.Split('|');
                     idc.Add(new id_cells(Int32.Parse(l[0]),Int32.Parse(l[1]),l[2],l[3],l[4],l[5]));
+                    //new is instancing id_cells
+                    //according to objects construcot
                     clue_window.clue_table.Rows.Add(new string[] { l[3], l[2], l[5] });
                 }
+                //line is equal to whatever it read
 
             }//end using
 
@@ -55,6 +57,21 @@ namespace CrossWordPuzzleYoutube
 
             clue_window.Show();
             clue_window.clue_table.AutoResizeColumns();
+
+
+            List<UserControl1> mylist = new List<UserControl1>();
+            //
+            for (int x = 0; x < 100; x++)
+            {
+                UserControl1 tb = new UserControl1();
+                tb.Parent = flowLayoutPanel1;
+                mylist.Add(tb); 
+            }
+            
+           
+            
+            
+
         }
 
         private void InitializeBoard()
@@ -71,18 +88,21 @@ namespace CrossWordPuzzleYoutube
             //the loop will stop
 
             foreach (DataGridViewColumn c in board.Columns)
-                c.Width = board.Width / board.Columns.Count;
+                c.Width = board.Width / board.Columns.Count / 2;
             //set width columns
             //by dividing width by number of columns
             //this allows specific and angular proportions
 
             foreach (DataGridViewRow r in board.Rows)
-                r.Height = board.Height / board.Rows.Count;
+                r.Height = board.Height / board.Rows.Count / 2;
             //set width rows
             //by dividing width by number of rows
             //this allows specific and angular proportions
 
             for(int row = 0 ; row < board.Rows.Count; row++)
+                //intialization
+                //test, comparision
+                //increment
             {
                 for(int col = 0; col < board.Columns.Count; col++)
                     board[col, row].ReadOnly = true;
@@ -123,6 +143,10 @@ namespace CrossWordPuzzleYoutube
             c.ReadOnly = false;
             c.Style.SelectionBackColor = Color.Cyan;
             c.Tag = letter;
+            //.Tag is...
+            //hidden text that you can use on string object
+            //use it for hidden stuff you can hidden
+            //user never sees it
         }
 
         private void Form1_LocationChanged(object sender, EventArgs e)
@@ -188,7 +212,9 @@ namespace CrossWordPuzzleYoutube
 
             //foreach(item c in list of items)
             if(idc.Any(c => (number = c.number) != "" && c.x == e.ColumnIndex && c.y == e.RowIndex))
+                    //this is lambda
             {
+
                 Rectangle r = new Rectangle(e.CellBounds.X, e.CellBounds.Y, e.CellBounds.Width, e.CellBounds.Height);
                 e.Graphics.FillRectangle(Brushes.White, r);
                 Font f = new Font(e.CellStyle.Font.FontFamily, 7);
@@ -199,20 +225,29 @@ namespace CrossWordPuzzleYoutube
             }
         }
 
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("By Joseph");
         }
 
         private void howToLoadYourOwnPuzzleToolStripMenuItem_Click(object sender, EventArgs e)
+            // e is just the EventArgs (Event Arguments) instanced
         {
-            MessageBox.Show("To make your own puzzles include .pzl as your extension and follow this format:    x | y | direction | number | word | clue");
+            MessageBox.Show("To make your own puzzles include .pzl as your extension and follow this format:\n x | y | direction | number | word | clue");
         }
 
         /*private void rewardsSystem(object sender, EventArgs e)
         {
             if()
+         * //if all color is darkgreen and not black, then success
         }*/
+
+        public System.Drawing.Size x { get; set; }
     }
 
     public class id_cells
