@@ -59,9 +59,46 @@ namespace CrossWordPuzzleYoutube
             clue_window.clue_table.AutoResizeColumns();
 
 
-            List<UserControl1> mylist = new List<UserControl1>();
+            List<UserControl1> mylist1 = new List<UserControl1>();
+            //this instances UserControl2 as mylist from here on out
+            for (int x = 0; x < 4; x++)
+            //x is unimportant as a variable
+            //it never gets used again during the loop
+            {
+                UserControl1 tb1 = new UserControl1();
+                //this instances tb as the new UserControl2 reference
+                tb1.Parent = flowLayoutPanel1;
+                //this says that the UserControl window(s)
+                //  will appear on the flowLayoutPanel1
+                //we put this in the loop because it will make
+                //  each added usercontrol to this parent
+                mylist1.Add(tb1); 
+                //this is pretty much just adding a usercontrol
+                //  to the flowLayoutPanel parent
+            }   //once the loop has ended, we are left with the amount
+
+            
+            List<UserControl2> mylist2 = new List<UserControl2>();
             //this instances UserControl1 as mylist from here on out
-            for (int x = 0; x < 10; x++)
+            for (int x = 0; x < 3; x++)
+            //x is unimportant as a variable
+            //it never gets used again during the loop
+            {
+                UserControl2 tb1 = new UserControl2();
+                //this instances tb as the new UserControl1 reference
+                tb1.Parent = flowLayoutPanel1;
+                //this says that the UserControl window(s)
+                //  will appear on the flowLayoutPanel1
+                //we put this in the loop because it will make
+                //  each added usercontrol to this parent
+                mylist2.Add(tb1);
+                //this is pretty much just adding a usercontrol
+                //  to the flowLayoutPanel parent
+            }
+
+            List<UserControl1> mylist3 = new List<UserControl1>();
+            //this instances UserControl1 as mylist from here on out
+            for (int x = 0; x < 1; x++)
             //x is unimportant as a variable
             //it never gets used again during the loop
             {
@@ -72,26 +109,23 @@ namespace CrossWordPuzzleYoutube
                 //  will appear on the flowLayoutPanel1
                 //we put this in the loop because it will make
                 //  each added usercontrol to this parent
-                mylist.Add(tb1); 
+                mylist3.Add(tb1);
                 //this is pretty much just adding a usercontrol
                 //  to the flowLayoutPanel parent
-                UserControl2 tb2 = new UserControl2();
-                //this instances tb as the new UserControl1 reference
-                tb2.Parent = flowLayoutPanel1;
-                //this says that the UserControl window(s)
-                //  will appear on the flowLayoutPanel1
-                //we put this in the loop because it will make
-                //  each added usercontrol to this parent
-                mylist.Add(tb1);
-                //this is pretty much just adding a usercontrol
-                //  to the flowLayoutPanel parent
-            }   //once the loop has ended, we are left with the amount
-            
+            }
+
+
             //TODO: Make rows and columns
             //      Make rows and columns only have 10
             //      Make numbers on specific ones
             //      Get familiar with user controls
            
+            //HOWTO:
+            //      Copy paste list<usercontrol> stuff and add to suffix # on mylist
+            //      Count how many rows need to be
+            //      UserControl1  =  blank
+            //      UserControl2  =  black
+            //      UserControln  =  whatever number you want, just add to UserControl
             
             
 
