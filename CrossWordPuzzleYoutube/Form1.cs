@@ -59,7 +59,7 @@ namespace CrossWordPuzzleYoutube
             clue_window.clue_table.AutoResizeColumns();
 
 
-            List<UserControl1> mylist1 = new List<UserControl1>();
+            List<UserControl1> APES = new List<UserControl1>();
             //this instances UserControl2 as mylist from here on out
             for (int x = 0; x < 4; x++)
             //x is unimportant as a variable
@@ -72,15 +72,15 @@ namespace CrossWordPuzzleYoutube
                 //  will appear on the flowLayoutPanel1
                 //we put this in the loop because it will make
                 //  each added usercontrol to this parent
-                mylist1.Add(tb1); 
+                APES.Add(tb1); 
                 //this is pretty much just adding a usercontrol
                 //  to the flowLayoutPanel parent
             }   //once the loop has ended, we are left with the amount
 
             
-            List<UserControl2> mylist2 = new List<UserControl2>();
+            List<UserControl2> BLANK1 = new List<UserControl2>();
             //this instances UserControl1 as mylist from here on out
-            for (int x = 0; x < 3; x++)
+            for (int x = 0; x < 4; x++)
             //x is unimportant as a variable
             //it never gets used again during the loop
             {
@@ -91,29 +91,378 @@ namespace CrossWordPuzzleYoutube
                 //  will appear on the flowLayoutPanel1
                 //we put this in the loop because it will make
                 //  each added usercontrol to this parent
-                mylist2.Add(tb1);
+                BLANK1.Add(tb1);
                 //this is pretty much just adding a usercontrol
                 //  to the flowLayoutPanel parent
             }
 
-            List<UserControl1> mylist3 = new List<UserControl1>();
-            //this instances UserControl1 as mylist from here on out
+            List<UserControl1> D = new List<UserControl1>();
             for (int x = 0; x < 1; x++)
-            //x is unimportant as a variable
-            //it never gets used again during the loop
+           {
+                UserControl1 tb1 = new UserControl1();
+                tb1.Parent = flowLayoutPanel1;
+                D.Add(tb1);
+           }
+
+            List<UserControl2> BLANK2 = new List<UserControl2>();
+            for (int x = 0; x < 1; x++)
+           {
+                UserControl2 tb1 = new UserControl2();
+                tb1.Parent = flowLayoutPanel1;
+                BLANK2.Add(tb1);
+           }
+
+            List<UserControl1> N = new List<UserControl1>();
+            for (int x = 0; x < 1; x++)
             {
                 UserControl1 tb1 = new UserControl1();
-                //this instances tb as the new UserControl1 reference
                 tb1.Parent = flowLayoutPanel1;
-                //this says that the UserControl window(s)
-                //  will appear on the flowLayoutPanel1
-                //we put this in the loop because it will make
-                //  each added usercontrol to this parent
-                mylist3.Add(tb1);
-                //this is pretty much just adding a usercontrol
-                //  to the flowLayoutPanel parent
+                N.Add(tb1);
             }
 
+            List<UserControl2> BLANK3 = new List<UserControl2>();
+            for (int x = 0; x < 5; x++)
+            {
+                UserControl2 tb1 = new UserControl2();
+                tb1.Parent = flowLayoutPanel1;
+                BLANK3.Add(tb1);
+            }
+
+            List<UserControl1> FOUR = new List<UserControl1>();
+            for (int x = 0; x < 4; x++)
+            {
+                UserControl1 tb1 = new UserControl1();
+                tb1.Parent = flowLayoutPanel1;
+                FOUR.Add(tb1);
+            }
+
+            List<UserControl1> DEMETER = new List<UserControl1>();
+            for (int x = 0; x < 7; x++)
+            {
+                UserControl1 tb1 = new UserControl1();
+                tb1.Parent = flowLayoutPanel1;
+                DEMETER.Add(tb1);
+            }
+
+            List<UserControl2> BLANK4 = new List<UserControl2>();
+            for (int x = 0; x < 1; x++)
+            {
+                UserControl2 tb1 = new UserControl2();
+                tb1.Parent = flowLayoutPanel1;
+                BLANK4.Add(tb1);
+            }
+
+            List<UserControl1> M = new List<UserControl1>();
+            for (int x = 0; x < 1; x++)
+            {
+                UserControl1 tb1 = new UserControl1();
+                tb1.Parent = flowLayoutPanel1;
+                M.Add(tb1);
+            }
+
+            List<UserControl2> BLANK5 = new List<UserControl2>();
+            for (int x = 0; x < 2; x++)
+            {
+                UserControl2 tb1 = new UserControl2();
+                tb1.Parent = flowLayoutPanel1;
+                BLANK5.Add(tb1);
+            }
+
+            List<UserControl1> Q = new List<UserControl1>();
+            for (int x = 0; x < 1; x++)
+            {
+                UserControl1 tb1 = new UserControl1();
+                tb1.Parent = flowLayoutPanel1;
+                Q.Add(tb1);
+            }
+
+            List<UserControl2> BLANK6 = new List<UserControl2>();
+            for (int x = 0; x < 1; x++)
+            {
+                UserControl2 tb1 = new UserControl2();
+                tb1.Parent = flowLayoutPanel1;
+                BLANK6.Add(tb1);
+            }
+
+            List<UserControl1> C = new List<UserControl1>();
+            for (int x = 0; x < 1; x++)
+            {
+                UserControl1 tb1 = new UserControl1();
+                tb1.Parent = flowLayoutPanel1;
+                C.Add(tb1);
+            }
+
+            List<UserControl2> BLANK7 = new List<UserControl2>();
+            for (int x = 0; x < 2; x++)
+            {
+                UserControl2 tb1 = new UserControl2();
+                tb1.Parent = flowLayoutPanel1;
+                BLANK7.Add(tb1);
+            }
+
+            List<UserControl1> O = new List<UserControl1>();
+            for (int x = 0; x < 1; x++)
+            {
+                UserControl1 tb1 = new UserControl1();
+                tb1.Parent = flowLayoutPanel1;
+                O.Add(tb1);
+            }
+
+            List<UserControl2> BLANK8 = new List<UserControl2>();
+            for (int x = 0; x < 1; x++)
+            {
+                UserControl2 tb1 = new UserControl2();
+                tb1.Parent = flowLayoutPanel1;
+                BLANK8.Add(tb1);
+            }
+
+            List<UserControl1> B = new List<UserControl1>();
+            for (int x = 0; x < 1; x++)
+            {
+                UserControl1 tb1 = new UserControl1();
+                tb1.Parent = flowLayoutPanel1;
+                B.Add(tb1);
+            }
+
+            List<UserControl2> BLANK9 = new List<UserControl2>();
+            for (int x = 0; x < 2; x++)
+            {
+                UserControl2 tb1 = new UserControl2();
+                tb1.Parent = flowLayoutPanel1;
+                BLANK9.Add(tb1);
+            }
+
+            List<UserControl1> U = new List<UserControl1>();
+            for (int x = 0; x < 1; x++)
+            {
+                UserControl1 tb1 = new UserControl1();
+                tb1.Parent = flowLayoutPanel1;
+                U.Add(tb1);
+            }
+
+            List<UserControl2> BLANK10 = new List<UserControl2>();
+            for (int x = 0; x < 1; x++)
+            {
+                UserControl2 tb1 = new UserControl2();
+                tb1.Parent = flowLayoutPanel1;
+                BLANK10.Add(tb1);
+            }
+
+            List<UserControl1> LOOM = new List<UserControl1>();
+            for (int x = 0; x < 4; x++)
+            {
+                UserControl1 tb1 = new UserControl1();
+                tb1.Parent = flowLayoutPanel1;
+                LOOM.Add(tb1);
+            }
+
+            List<UserControl2> BLANK11 = new List<UserControl2>();
+            for (int x = 0; x < 4; x++)
+            {
+                UserControl2 tb1 = new UserControl2();
+                tb1.Parent = flowLayoutPanel1;
+                BLANK11.Add(tb1);
+            }
+
+            List<UserControl1> A = new List<UserControl1>();
+            for (int x = 0; x < 1; x++)
+            {
+                UserControl1 tb1 = new UserControl1();
+                tb1.Parent = flowLayoutPanel1;
+                A.Add(tb1);
+            }
+
+            List<UserControl2> BLANK12 = new List<UserControl2>();
+            for (int x = 0; x < 1; x++)
+            {
+                UserControl2 tb1 = new UserControl2();
+                tb1.Parent = flowLayoutPanel1;
+                BLANK12.Add(tb1);
+            }
+
+            List<UserControl1> L = new List<UserControl1>();
+            for (int x = 0; x < 1; x++)
+            {
+                UserControl1 tb1 = new UserControl1();
+                tb1.Parent = flowLayoutPanel1;
+                L.Add(tb1);
+            }
+
+            List<UserControl2> BLANK13 = new List<UserControl2>();
+            for (int x = 0; x < 1; x++)
+            {
+                UserControl2 tb1 = new UserControl2();
+                tb1.Parent = flowLayoutPanel1;
+                BLANK13.Add(tb1);
+            }
+
+            List<UserControl1> O2 = new List<UserControl1>();
+            for (int x = 0; x < 1; x++)
+            {
+                UserControl1 tb1 = new UserControl1();
+                tb1.Parent = flowLayoutPanel1;
+                O2.Add(tb1);
+            }
+
+            List<UserControl2> BLANK14 = new List<UserControl2>();
+            for (int x = 0; x < 1; x++)
+            {
+                UserControl2 tb1 = new UserControl2();
+                tb1.Parent = flowLayoutPanel1;
+                BLANK14.Add(tb1);
+            }
+
+            List<UserControl1> LEE = new List<UserControl1>();
+            for (int x = 0; x < 3; x++)
+            {
+                UserControl1 tb1 = new UserControl1();
+                tb1.Parent = flowLayoutPanel1;
+                LEE.Add(tb1);
+            }
+
+            List<UserControl2> BLANK15 = new List<UserControl2>();
+            for (int x = 0; x < 1; x++)
+            {
+                UserControl2 tb1 = new UserControl2();
+                tb1.Parent = flowLayoutPanel1;
+                BLANK15.Add(tb1);
+            }
+
+            List<UserControl1> TAP = new List<UserControl1>();
+            for (int x = 0; x < 3; x++)
+            {
+                UserControl1 tb1 = new UserControl1();
+                tb1.Parent = flowLayoutPanel1;
+                TAP.Add(tb1);
+            }
+
+            List<UserControl2> BLANK16 = new List<UserControl2>();
+            for (int x = 0; x < 1; x++)
+            {
+                UserControl2 tb1 = new UserControl2();
+                tb1.Parent = flowLayoutPanel1;
+                BLANK16.Add(tb1);
+            }
+
+            List<UserControl1> Z = new List<UserControl1>();
+            for (int x = 0; x < 1; x++)
+            {
+                UserControl1 tb1 = new UserControl1();
+                tb1.Parent = flowLayoutPanel1;
+                Z.Add(tb1);
+            }
+
+            List<UserControl2> BLANK17 = new List<UserControl2>();
+            for (int x = 0; x < 1; x++)
+            {
+                UserControl2 tb1 = new UserControl2();
+                tb1.Parent = flowLayoutPanel1;
+                BLANK17.Add(tb1);
+            }
+
+            List<UserControl1> E = new List<UserControl1>();
+            for (int x = 0; x < 1; x++)
+            {
+                UserControl1 tb1 = new UserControl1();
+                tb1.Parent = flowLayoutPanel1;
+                E.Add(tb1);
+            }
+
+            List<UserControl2> BLANK18 = new List<UserControl2>();
+            for (int x = 0; x < 1; x++)
+            {
+                UserControl2 tb1 = new UserControl2();
+                tb1.Parent = flowLayoutPanel1;
+                BLANK18.Add(tb1);
+            }
+
+            List<UserControl1> R = new List<UserControl1>();
+            for (int x = 0; x < 1; x++)
+            {
+                UserControl1 tb1 = new UserControl1();
+                tb1.Parent = flowLayoutPanel1;
+                R.Add(tb1);
+            }
+
+            List<UserControl2> BLANK19 = new List<UserControl2>();
+            for (int x = 0; x < 1; x++)
+            {
+                UserControl2 tb1 = new UserControl2();
+                tb1.Parent = flowLayoutPanel1;
+                BLANK19.Add(tb1);
+            }
+
+            List<UserControl1> INSPECTOR = new List<UserControl1>();
+            for (int x = 0; x < 9; x++)
+            {
+                UserControl1 tb1 = new UserControl1();
+                tb1.Parent = flowLayoutPanel1;
+                INSPECTOR.Add(tb1);
+            }
+
+            List<UserControl1> NONE = new List<UserControl1>();
+            for (int x = 0; x < 4; x++)
+            {
+                UserControl1 tb1 = new UserControl1();
+                tb1.Parent = flowLayoutPanel1;
+                NONE.Add(tb1);
+            }
+
+            List<UserControl2> BLANK20 = new List<UserControl2>();
+            for (int x = 0; x < 2; x++)
+            {
+                UserControl2 tb1 = new UserControl2();
+                tb1.Parent = flowLayoutPanel1;
+                BLANK20.Add(tb1);
+            }
+
+            List<UserControl1> U2 = new List<UserControl1>();
+            for (int x = 0; x < 1; x++)
+            {
+                UserControl1 tb1 = new UserControl1();
+                tb1.Parent = flowLayoutPanel1;
+                U2.Add(tb1);
+            }
+
+            List<UserControl2> BLANK21 = new List<UserControl2>();
+            for (int x = 0; x < 2; x++)
+            {
+                UserControl2 tb1 = new UserControl2();
+                tb1.Parent = flowLayoutPanel1;
+                BLANK21.Add(tb1);
+            }
+
+            List<UserControl1> O3 = new List<UserControl1>();
+            for (int x = 0; x < 1; x++)
+            {
+                UserControl1 tb1 = new UserControl1();
+                tb1.Parent = flowLayoutPanel1;
+                O3.Add(tb1);
+            }
+
+            List<UserControl1> ONE = new List<UserControl1>();
+            for (int x = 0; x < 3; x++)
+            {
+                UserControl1 tb1 = new UserControl1();
+                tb1.Parent = flowLayoutPanel1;
+                ONE.Add(tb1);
+            }
+
+            List<UserControl2> BLANK22 = new List<UserControl2>();
+            for (int x = 0; x < 3; x++)
+            {
+                UserControl2 tb1 = new UserControl2();
+                tb1.Parent = flowLayoutPanel1;
+                BLANK22.Add(tb1);
+            }
+
+            List<UserControl1> TOUR = new List<UserControl1>();
+            for (int x = 0; x < 4; x++)
+            {
+                UserControl1 tb1 = new UserControl1();
+                tb1.Parent = flowLayoutPanel1;
+                TOUR.Add(tb1);
+            }
 
             //TODO: Make rows and columns
             //      Make rows and columns only have 10
