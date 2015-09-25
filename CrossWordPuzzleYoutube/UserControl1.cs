@@ -1,4 +1,4 @@
-﻿using System;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -12,6 +12,8 @@ namespace CrossWordPuzzleYoutube
 {
     public partial class UserControl1 : UserControl
     {
+        public string Answer;
+
         public UserControl1()
         {
             InitializeComponent();
